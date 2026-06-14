@@ -1,0 +1,292 @@
+# Welcome to Jekyll!
+#
+# 이 파일은 사이트 전체에 영향을 주는 설정입니다.
+# `jekyll serve` 중에는 이 파일이 자동 반영되지 않으니,
+# 수정한 뒤에는 서버를 껐다 다시 켜주세요(Ctrl+C 후 재실행).
+#
+# ▶ "# 👈" 표시가 있는 줄만 본인 정보로 바꾸면 됩니다.
+
+# Theme Settings
+minimal_mistakes_skin    : "default" # 일단 default. 나중에 air, dark, contrast, mint 등으로 취향껏 교체 가능
+
+# Site Settings
+locale                   : "ko-KR"                       # 한국어 블로그
+title_separator          : "-"
+title                    : "개발기록"
+subtitle                 : # 사이트 제목 아래 표시되는 태그라인(선택)
+name                     : "조승원"
+description              : "나의 개발기록"
+url                      : "https://revol7365.github.io"   # 👈 본인 깃허브 주소. 도메인 사면 그때 교체
+baseurl                  : # 보통 비워둠. (프로젝트 페이지일 때만 "/repo-name")
+repository               : "revol7365/revol7365.github.io"  # 👈 GitHub "아이디/저장소명" (검색·댓글에 필요)
+teaser                   : # 목록에서 이미지 없는 글에 쓸 기본 썸네일(선택)
+logo                     : # 마스트헤드에 표시할 로고 이미지(선택)
+masthead_title           : # 마스트헤드 제목 덮어쓰기, 숨기려면 " "
+breadcrumbs              : true                           # 상단 경로(빵부스러기) 표시
+words_per_minute         : 400                            # 한글 기준으로 읽기 시간 보정
+enable_copy_code_button  : true                           # 코드 블록 복사 버튼 (개발 블로그 필수급)
+copyright                : # 저작권 표기 이름, 기본값은 site.title
+copyright_url            : # 저작권 URL, 기본값은 site.url
+comments:
+  # ▼ 댓글은 사이트가 먼저 뜨는 걸 확인한 뒤에 붙이는 걸 권장합니다.
+  #   giscus.app에서 repo_id / category_id를 발급받은 다음,
+  #   아래 provider를 "giscus"로 바꾸고 defaults의 comments도 true로 켜세요.
+  provider               : # false (default). 준비되면 "giscus"
+  disqus:
+    shortname            :
+  discourse:
+    server               :
+  facebook:
+    appid                :
+    num_posts            :
+    colorscheme          :
+  utterances:
+    theme                :
+    issue_term           :
+  giscus:
+    repo_id              : # 👈 giscus.app에서 발급 (예: "R_xxxxxxxx")
+    category_name        : "Comments"
+    category_id          : # 👈 giscus.app에서 발급 (예: "DIC_xxxxxxxx")
+    discussion_term      : "pathname"
+    reactions_enabled    : '1'
+    theme                : "light"
+    strict               :
+    input_position       : "bottom"
+    emit_metadata        :
+    lang                 : "ko"
+    lazy                 : true
+  staticman:
+    branch               :
+    endpoint             :
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # 비워두면 feed.xml 사용
+  hide                   : # true, false (default)
+search                   : true                           # 검색 기능 켜기
+search_full_content      : # true, false (default)
+search_provider          : lunr                           # 외부 서비스 없이 무료로 동작
+lunr:
+  search_within_pages    : # true, false (default)
+algolia:
+  application_id         :
+  index_name             :
+  search_only_api_key    :
+  powered_by             :
+google:
+  search_engine_id       :
+  instant_search         :
+# SEO Related (블로그부터 띄운 뒤 천천히 채워도 됨)
+google_site_verification :
+bing_site_verification   :
+naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # 공유 시 기본 썸네일(선택)
+og_image_alt             :
+social:
+  type                   : # Person 또는 Organization (기본 Person)
+  name                   :
+  links:
+
+# Analytics (방문자 통계, 나중에 추가)
+analytics:
+  provider               : # false (default), "google-gtag" 등
+  google:
+    tracking_id          :
+    anonymize_ip         :
+
+
+# Site Author  ── 왼쪽 프로필 사이드바
+author:
+  name             : "조승원"
+  avatar           : "/assets/images/profile.jpg"   # 👈 이 경로에 프로필 사진 넣기
+  bio              : "안녕하세요, 반갑습니다!"
+  location         : "Hanamsi, Korea"
+  email            :                                # 비워두면 표시 안 됨
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/revol7365"
+    - label: "Email"
+      icon: "fas fa-fw fa-square-envelope"
+      url: "revol7365@gmail.com"
+    # 아래는 쓰는 것만 url 채우고, 안 쓰면 통째로 삭제하세요.
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-square-x-twitter"
+    #   url: "https://twitter.com/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+
+# Site Footer  ── 페이지 하단 링크
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/username"            # 👈 본인 GitHub 주소
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-square-x-twitter"
+    #   url:
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url:
+  since: "2026"                                     # 👈 시작 연도
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+  quiet_deps: true
+  silence_deprecations: ['import']
+
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Seoul                                # 한국 시간대
+
+
+# Pagination with jekyll-paginate
+paginate: 5 # 한 페이지에 보여줄 글 수
+paginate_path: /page:num/
+
+# Pagination with jekyll-paginate-v2
+pagination:
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # giscus 준비되면 true 로 변경
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
