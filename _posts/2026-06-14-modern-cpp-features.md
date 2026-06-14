@@ -1,6 +1,6 @@
 ---
-title: "Modern C++ 공부 노트: format, constexpr, 컨셉, 모듈, 레인지"
-excerpt: "std::format, constexpr, 정수 비교, 우주선 연산자, 컨셉/제약조건, 모듈, 레인지 등 Modern C++(C++20/23)의 새 기능들을 공부하며 정리한 노트."
+title: "[예제로 배우는 C++ STL] 01강 C++20의 새로운 기능"
+excerpt: "예제로 배우는 C++ STL 01강"
 date: 2026-06-14 09:00:00 +0900
 categories:
   - 공부 기록
@@ -9,6 +9,7 @@ tags:
   - Modern C++
   - C++20
   - C++23
+series: "예제로 배우는 C++ STL"
 toc: true
 toc_label: "목차"
 toc_sticky: true
