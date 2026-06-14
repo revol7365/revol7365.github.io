@@ -1,0 +1,24 @@
+{% if page.series %}
+  {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
+  {% if series_posts.size > 1 %}
+    <aside class="series-box">
+      <p class="series-box__title">
+        <i class="fas fa-fw fa-layer-group"></i>
+        <strong>{{ page.series }}</strong> 시리즈 · 총 {{ series_posts.size }}편
+      </p>
+      <ol class="series-box__list">
+        {% for post in series_posts %}
+          {% if post.url == page.url %}
+            <li class="series-box__item is-current">
+              {{ post.title }}<span class="series-box__badge">지금 보는 글</span>
+            </li>
+          {% else %}
+            <li class="series-box__item">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </aside>
+  {% endif %}
+{% endif %}

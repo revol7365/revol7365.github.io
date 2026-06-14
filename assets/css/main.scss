@@ -7,3 +7,44 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ── 시리즈(연재) 박스 ───────────────────────────── */
+.series-box {
+  margin: 1.5em 0 2em;
+  padding: 1em 1.25em;
+  border: 1px solid $border-color;
+  border-left: 4px solid $primary-color;
+  border-radius: $border-radius;
+  background-color: mix($primary-color, $background-color, 6%);
+
+  &__title {
+    margin: 0 0 0.5em;
+    font-size: $type-size-5;
+    color: $text-color;
+
+    .fas { color: $primary-color; }
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 1.5em;
+
+    li { margin-bottom: 0.25em; }
+  }
+
+  &__item.is-current {
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  &__badge {
+    margin-left: 0.5em;
+    padding: 0.1em 0.5em;
+    font-size: $type-size-7;
+    font-weight: normal;
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: $border-radius;
+    vertical-align: middle;
+  }
+}

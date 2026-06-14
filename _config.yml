@@ -20,7 +20,7 @@ url                      : "https://revol7365.github.io"   # 👈 본인 깃허�
 baseurl                  : # 보통 비워둠. (프로젝트 페이지일 때만 "/repo-name")
 repository               : "revol7365/revol7365.github.io"  # 👈 GitHub "아이디/저장소명" (검색·댓글에 필요)
 teaser                   : # 목록에서 이미지 없는 글에 쓸 기본 썸네일(선택)
-logo                     : # 마스트헤드에 표시할 로고 이미지(선택)
+logo                     : "/assets/images/logo.png"   # 마스트헤드 로고
 masthead_title           : # 마스트헤드 제목 덮어쓰기, 숨기려면 " "
 breadcrumbs              : true                           # 상단 경로(빵부스러기) 표시
 words_per_minute         : 400                            # 한글 기준으로 읽기 시간 보정
@@ -31,7 +31,7 @@ comments:
   # ▼ 댓글은 사이트가 먼저 뜨는 걸 확인한 뒤에 붙이는 걸 권장합니다.
   #   giscus.app에서 repo_id / category_id를 발급받은 다음,
   #   아래 provider를 "giscus"로 바꾸고 defaults의 comments도 true로 켜세요.
-  provider               : # false (default). 준비되면 "giscus"
+  provider               : "giscus"
   disqus:
     shortname            :
   discourse:
@@ -44,9 +44,9 @@ comments:
     theme                :
     issue_term           :
   giscus:
-    repo_id              : # 👈 giscus.app에서 발급 (예: "R_xxxxxxxx")
+    repo_id              : "R_kgDOS6PVQQ"
     category_name        : "Comments"
-    category_id          : # 👈 giscus.app에서 발급 (예: "DIC_xxxxxxxx")
+    category_id          : "DIC_kwDOS6PVQc4C_Iqu"
     discussion_term      : "pathname"
     reactions_enabled    : '1'
     theme                : "light"
@@ -109,7 +109,7 @@ analytics:
 # Site Author  ── 왼쪽 프로필 사이드바
 author:
   name             : "조승원"
-  avatar           : "/assets/images/profile.jpg"   # 👈 이 경로에 프로필 사진 넣기
+  avatar           : "/assets/images/profile.png"   # 👈 프로필 사진 (교체하려면 이 경로의 파일을 바꾸세요)
   bio              : "안녕하세요, 반갑습니다!"
   location         : "Hanamsi, Korea"
   email            :                                # 비워두면 표시 안 됨
@@ -117,9 +117,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/revol7365"
-    - label: "Email"
-      icon: "fas fa-fw fa-square-envelope"
-      url: "revol7365@gmail.com"
     # 아래는 쓰는 것만 url 채우고, 안 쓰면 통째로 삭제하세요.
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-square-x-twitter"
@@ -133,7 +130,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/username"            # 👈 본인 GitHub 주소
+      url: "https://github.com/revol7365"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-square-x-twitter"
     #   url:
@@ -148,6 +145,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - CLAUDE.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -280,7 +278,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # giscus 준비되면 true 로 변경
+      comments: true
       share: true
       related: true
   # _pages
