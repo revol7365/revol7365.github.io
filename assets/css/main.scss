@@ -48,3 +48,91 @@ search: false
     vertical-align: middle;
   }
 }
+
+/* ── 사용자 이미지 슬롯 (상단 배너 / 하단) ────────── */
+.site-header-image {
+  max-width: $max-width;       // 본문 폭에 맞춰 배너가 너무 거대해지지 않게
+  margin: 0 auto 0.5em;
+  padding: 0 0.5em;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+}
+
+.site-footer-image {
+  margin-bottom: 1.5em;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ── 글 맨 끝 감사 카드 (수달 그림 + 문구) ────────── */
+.post-thanks {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+  margin: 2.5em 0 0;
+  padding: 1.25em 1.5em;
+  background-color: mix(#fff, $background-color, 35%);
+  border: 1px solid $border-color;
+  border-left: 5px solid $primary-color;
+  border-radius: $border-radius;
+
+  &__otter {
+    flex: 0 0 auto;
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+  }
+
+  &__title {
+    margin: 0 0 0.25em;
+    font-size: $type-size-5;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  &__sub {
+    margin: 0;
+    font-size: $type-size-6;
+    color: $muted-text-color;
+  }
+
+  @include breakpoint(max-width $small) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ── 404 페이지 (길 잃은 수달) ────────── */
+.otter-404 {
+  text-align: center;
+  margin: 2em auto 3em;
+
+  &__img {
+    width: 220px;
+    max-width: 60%;
+    height: auto;
+  }
+
+  &__code {
+    margin: 0.2em 0 0;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1;
+    color: $primary-color;
+  }
+
+  &__msg {
+    margin: 0.4em 0 1.4em;
+    font-size: $type-size-5;
+    color: $muted-text-color;
+  }
+}

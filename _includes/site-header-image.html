@@ -1,0 +1,6 @@
+{% comment %} 상단 큰 배너는 홈(첫 화면)에서만 노출 — 글/About 등 나머지 페이지는 깔끔하게 {% endcomment %}
+{% if site.header_image and page.url == "/" %}
+<div class="site-header-image">
+  <img src="{{ site.header_image | relative_url }}" alt="{{ site.title }}">
+</div>
+{% endif %}

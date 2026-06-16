@@ -1,3 +1,9 @@
 <!-- start custom footer snippets -->
 
+{% if site.footer_image %}
+<div class="site-footer-image">
+  <img src="{{ site.footer_image | relative_url }}" alt="{{ site.title }}">
+</div>
+{% endif %}
+
 <!-- end custom footer snippets -->

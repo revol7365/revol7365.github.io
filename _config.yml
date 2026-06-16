@@ -7,21 +7,27 @@
 # ▶ "# 👈" 표시가 있는 줄만 본인 정보로 바꾸면 됩니다.
 
 # Theme Settings
-minimal_mistakes_skin    : "default" # 일단 default. 나중에 air, dark, contrast, mint 등으로 취향껏 교체 가능
+minimal_mistakes_skin    : "otter" # 캐릭터(개발하는 수달) 색감: 크림+네이비+오렌지. (다른 옵션: default, air, dark, contrast, mint …)
 
 # Site Settings
 locale                   : "ko-KR"                       # 한국어 블로그
 title_separator          : "-"
-title                    : "개발기록"
+title                    : "개발하는 수달"
 subtitle                 : # 사이트 제목 아래 표시되는 태그라인(선택)
 name                     : "조승원"
-description              : "나의 개발기록"
+description              : "개발하는 수달 — 조승원의 개발기록"
 url                      : "https://revol7365.github.io"   # 👈 본인 깃허브 주소. 도메인 사면 그때 교체
 baseurl                  : # 보통 비워둠. (프로젝트 페이지일 때만 "/repo-name")
 repository               : "revol7365/revol7365.github.io"  # 👈 GitHub "아이디/저장소명" (검색·댓글에 필요)
 teaser                   : # 목록에서 이미지 없는 글에 쓸 기본 썸네일(선택)
-logo                     : "/assets/images/logo.png"   # 마스트헤드 로고
+logo                     : "/assets/images/02_profile.png"   # 마스트헤드 로고 (작은 원형 수달 아이콘)
 masthead_title           : # 마스트헤드 제목 덮어쓰기, 숨기려면 " "
+# ── 직접 만든 이미지를 넣는 자리 ──────────────────────────────────
+# 이미지를 /assets/images/ 에 넣고, 아래 줄의 주석(#)을 풀면 표시됩니다.
+header_image             : "/assets/images/04_header_text.png"   # 상단 배너 (권장 1600×400)
+footer_image             : "/assets/images/05_blog_footer.png"   # 하단 이미지 (권장 1600×300)
+post_card                : "/assets/images/10_otter_thanks.png"   # 글 끝 감사 카드에 들어갈 '수달 그림만'(투명PNG). 문구는 코드에서 얹음
+favicon                  : "/assets/images/03_favicon.png"  # 파비콘 (권장 512×512 정사각형)
 breadcrumbs              : true                           # 상단 경로(빵부스러기) 표시
 words_per_minute         : 400                            # 한글 기준으로 읽기 시간 보정
 enable_copy_code_button  : true                           # 코드 블록 복사 버튼 (개발 블로그 필수급)
@@ -109,7 +115,7 @@ analytics:
 # Site Author  ── 왼쪽 프로필 사이드바
 author:
   name             : "조승원"
-  avatar           : "/assets/images/profile.png"   # 👈 프로필 사진 (교체하려면 이 경로의 파일을 바꾸세요)
+  avatar           : "/assets/images/02_profile.png"   # 👈 프로필 사진 (교체하려면 이 경로의 파일을 바꾸세요)
   bio              : "안녕하세요, 반갑습니다!"
   location         : "Hanamsi, Korea"
   email            :                                # 비워두면 표시 안 됨

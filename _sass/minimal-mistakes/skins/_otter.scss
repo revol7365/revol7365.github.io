@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Otter skin — 캐릭터(개발하는 수달) 색감: 크림 + 네이비 + 따뜻한 오렌지
+   ========================================================================== */
+
+/* Colors */
+$cream:        #faf4e8 !default;  // 배경 크림
+$navy-ink:     #20304f !default;  // 본문 잉크(네이비)
+$otter-orange: #e2913b !default;  // 포인트 오렌지
+
+$dark-gray:    $navy-ink !default;
+$background-color: $cream !default;
+$text-color:   $navy-ink !default;
+$muted-text-color: #6f6452 !default;            // 따뜻한 브라운-그레이
+$primary-color: $otter-orange !default;
+$border-color: mix(#000, $background-color, 12%) !default;
+$code-background-color: mix(#fff, $background-color, 35%) !default;
+$code-background-color-dark: mix(#000, $background-color, 8%) !default;
+$form-background-color: mix(#fff, $background-color, 25%) !default;
+$footer-background-color: #f2e7d3 !default;      // 살짝 진한 크림
+
+$link-color: #c9772a !default;                   // 크림 위에서 또렷한 오렌지
+$link-color-hover: mix(#000, $link-color, 18%) !default;
+$link-color-visited: mix(#000, $link-color, 28%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+/* notices */
+$notice-background-mix: 80% !default;
+
+/* 코드 블록 (base16, 크림 위에서 잘 보이는 차분한 다크) */
+$base00: #1d1f21 !default;
+$base01: #282a2e !default;
+$base02: #373b41 !default;
+$base03: #969896 !default;
+$base04: #b4b7b4 !default;
+$base05: #c5c8c6 !default;
+$base06: #e0e0e0 !default;
+$base07: #ffffff !default;
+$base08: #cc6666 !default;
+$base09: #de935f !default;
+$base0a: #f0c674 !default;
+$base0b: #b5bd68 !default;
+$base0c: #8abeb7 !default;
+$base0d: #81a2be !default;
+$base0e: #b294bb !default;
+$base0f: #a3685a !default;
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}

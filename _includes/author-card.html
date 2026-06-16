@@ -1,0 +1,11 @@
+{% comment %} 글 맨 끝 감사 카드 — 수달 그림(site.post_card) + 문구(아래 텍스트) {% endcomment %}
+{% if site.post_card %}
+<aside class="post-thanks">
+  <img class="post-thanks__otter" src="{{ site.post_card | relative_url }}"
+       alt="개발하는 수달이 손을 흔드는 그림">
+  <div class="post-thanks__text">
+    <p class="post-thanks__title">끝까지 읽어주셔서 감사합니다 🦦</p>
+    <p class="post-thanks__sub">도움이 되셨다면 아래로 댓글 한 줄 남겨주세요. 다음 글에서 또 만나요!</p>
+  </div>
+</aside>
+{% endif %}
